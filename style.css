@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --RedPrimary: hsl(0, 78%, 62%);
+    --CyanPrimary: hsl(180, 62%, 55%);
+    --OrangePrimary: hsl(34, 97%, 64%);
+    --BluePrimary: hsl(212, 86%, 64%);
+
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    
+    --Shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 30px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+header{
+    text-align: center;
+    padding: 70px 0px 50px 0;
+}
+
+header h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--VeryDarkBlue);
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1.5rem;
+}
+
+header p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--GrayishBlue);
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.card{
+    box-shadow: 2px 8px 14px var(--GrayishBlue);
+    border-radius: 8px;
+    padding: 30px;
+    margin: 2rem 0;
+    max-width: 400px; 
+}
+
+.card.aqua{
+    border-top: 5px solid var(--CyanPrimary);
+    margin: 0;
+}
+.card.red{
+    border-top: 5px solid var(--RedPrimary);
+    
+}
+.card.orange{
+    border-top: 5px solid var(--OrangePrimary);
+}
+.card.blue{
+    border-top: 5px solid var(--BluePrimary);
+    margin: 0;
+}
+
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-top: 29px;
+}
+
+.card h2{
+    color: var(--VeryDarkBlue);
+    font-size: 1.5rem;
+}
+
+.card p{
+    font-size: 1rem;
+    color: var(--GrayishBlue);
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards{
+        flex-direction: row;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+    
+}
